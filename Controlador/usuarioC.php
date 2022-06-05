@@ -1,5 +1,5 @@
 <?php
-
+/*
 require "../vendor/autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -8,10 +8,7 @@ require_once "/Users/estebanmarentes/.bitnami/stackman/machines/xampp/volumes/ro
 require '/Users/estebanmarentes/.bitnami/stackman/machines/xampp/volumes/root/htdocs/LaDorada/vendor/phpmailer/phpmailer/src/Exception.php';
 require '/Users/estebanmarentes/.bitnami/stackman/machines/xampp/volumes/root/htdocs/LaDorada/vendor/phpmailer/phpmailer/src/SMTP.php';
 
-?>
-
-<?php
-
+*/
 
 
 class usuarioC
