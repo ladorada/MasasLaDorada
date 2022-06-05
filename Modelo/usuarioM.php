@@ -16,4 +16,21 @@ class usuarioM extends conexionBD{
 
 
     }
+
+    static public function RecuperarContraseñaM($datosC, $tablaBD){
+
+        $pdo = ConexionBD::cBD()->prepare("SELECT email_i FROM $tablaBD WHERE email_i = :email_i");
+
+        $pdo -> bindParam(":email_i", $datosC["email_i"], PDO::PARAM_STR);
+
+        $pdo -> execute();
+
+        return $pdo->fetch();
+
+        $pdo->close;
+
+
+    }
+
 }
+

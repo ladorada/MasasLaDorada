@@ -124,6 +124,7 @@ class registroUsuarioC
             <td>' . $value["cant_masacrio"] . '</td>
             <td>' . $value["cant_masacopeti"] . '</td>
             <td>' . $value["cant_copehojal"] . '</td>
+            <td>' . $value["deuda"] . '</td>
             </tr>';
         }
     }

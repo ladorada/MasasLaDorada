@@ -71,6 +71,7 @@ if (!$_SESSION["Ingreso"]) {
                             <th>Cantidad de Masa de empanadas Criollas</th>
                             <th>Cantidad de Masa de empanadas Copetines</th>
                             <th>Cantidad de Copetin de Hojaldre</th>
+                            <th>Costo total de los productos</th>
                      </tr>
               </thead>
 

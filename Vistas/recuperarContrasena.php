@@ -48,11 +48,29 @@ require_once "../Modelo/RegistroUsuarioM.php";
 
 
         </header>
-       
-       <div class="bienv">/
-        
-                  <h1 align = "center">Recupera tu contraseña</h1>
+       <div class="cont_principal">
 
-       </div>    
+
+<div class="cont_centrar">
+  <div class="cont_login">
+    <form method="post">
+    <p>Coloca tu correo electrónico asociado a tu cuenta</p>
+
+
+      <input type="text" class="input_form_sign d_block active_inp" placeholder="EMAIL" name="email_i" required>
+      <div class="cont_btn">
+      <input type="submit" class="btn_sign" value="Recuperar contraseña">
+      </div>
+    </form>
+  </div>
+
+</div>
+
+
+</div>
+
+
+
+
 
 </html>     

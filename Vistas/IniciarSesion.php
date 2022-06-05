@@ -46,10 +46,6 @@ require_once "../Modelo/RegistroUsuarioM.php";
 
   </header>
 
-
-
-
-
   <div class="cont_principal">
 
 
@@ -90,41 +86,4 @@ require_once "../Modelo/RegistroUsuarioM.php";
 $ingreso = new UsuarioC();
 $ingreso->IngresoC();
 
-/*
-     $Servidor= "localhost";
-     $usuario='root';
-     $Contraseña= " ";
-     $basededatos= "Formularios";
-
-     $Enlacce= mysqli_connect($Servidor, $usuario, $Contraseña,$basededatos);
-     if (!$enlace){
-       echo"Error en la conexión con el servidor";
-     }
-*/
-
-/*
-
-   if(ISSET($_POST['Registrarse'])){
-              $NOMBRE= $_POST["name_us"];
-              $EMAIL= $_POST["email_us"];
-              $DIRECCIÓN= $_POST["addresS_us"];
-              $CONTRASEÑA= $_POST["pass_us"];
-              $CONFIRMACION_CONTRASEÑA = $_POST["conf_pass_us"];
-              $id_us = rand(1,99);
-
-              $insertarDatos= "INSERT INTO usuarios VALUES ('$NOMBRE',
-                                                            '$EMAIL',
-                                                             '$DIRECCIÓN',
-                                                             '$CONTRASEÑA',
-                                                             '$CONFIRMACION_CONTRASEÑA',
-                                                             '$id_us')";
-
-                $ejecutarinsertarDatos= mysqli($enlace, $insertarDatos);
-                  if(!ejecutarinsertar){
-                    echo "error en la linea de sql";
-                  }
-
-
-              
-   }*/
 ?>

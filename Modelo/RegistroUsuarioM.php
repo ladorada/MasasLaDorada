@@ -118,7 +118,7 @@ class RegistroUsuarioM extends conexionBD{
     // Mostrar los resulatods
     static public function mostrarCarritoM($datosC, $tablaBD)
     {
-        $pdo = conexionBD::cBD()->prepare("SELECT cant_pascuInt, cant_pascucrioll, cant_masahojal, cant_masacrio, cant_masacopeti, cant_copehojal FROM $tablaBD WHERE email_i = :email_i ");
+        $pdo = conexionBD::cBD()->prepare("SELECT cant_pascuInt, cant_pascucrioll, cant_masahojal, cant_masacrio, cant_masacopeti, cant_copehojal, deuda FROM $tablaBD WHERE email_i = :email_i ");
         $pdo->bindParam(":email_i", $datosC["email_i"], PDO::PARAM_STR);
 
         $pdo->execute();
