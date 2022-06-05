@@ -39,11 +39,11 @@
 
         </header>
        
-       <div class="bienv">/
+       <div class="bienv">
         
-                  <h1> Bienvenidos a la Dorada</h1>
+                  <h1 align ="center" > Bienvenidos a la Dorada</h1>
                   
-                      <img style="display:block;margin:0 auto 0 auto;" src="Images/Doradas.jpg" alt="descripción" width="350" height="350" />
+                      <img style="display:block;margin:0 auto 0 auto;" src="Vistas/Images/Doradas.jpg" alt="descripción" width="350" height="350" />
                   
                  </br>
 
