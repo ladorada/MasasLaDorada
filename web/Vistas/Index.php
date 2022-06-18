@@ -54,7 +54,7 @@ require_once "../Modelo/RegistroUsuarioM.php";
 
         </header>
        
-       <div class="bienv">/
+       <div class="bienv">
         
                   <h1> Bienvenidos a la Dorada</h1>
                   
