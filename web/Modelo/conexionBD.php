@@ -32,8 +32,4 @@ usuario: root
 contraseña: L27!vg2_A9nGc2vj
 */
 
-
-// Connect to DB
-$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-
 ?>
