@@ -27,7 +27,7 @@
    
                    <li><a href="Contactodist.php">Distribuidores</a></li>
                   <li><a href="Contacto.php">Contacto</a></li>
-                  <li><a href="Salir.php">Cerrar Sesión</a</li>
+                  <li><a href="Salir.php">Cerrar Sesión</a></li>
               
                 </ul>
            </nav>
