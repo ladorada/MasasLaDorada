@@ -81,16 +81,37 @@ if (!$_SESSION["Ingreso"]) {
 $mostrar = new registroUsuarioC();
 $mostrar->mostrarCarritoC();
 
+$valor = new registroUsuarioC();
+$valor =$valor->mostrarDeudaC();
+$valor = $valor[0];
+$valor = strval($valor);
+$correo = $_SESSION['email_i'];
+$correo = strval($correo)
+
                      ?>
               </tbody>
        </table></div>
 
 
        <div class="cont_principal">
-        <form method="post">
-          <input type="submit" class="btn_sign" value="Comprar">
-
-        </form>
+        
+       <form method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/">
+  <input name="merchantId"      type="hidden"  value="973442"   >
+  <input name="accountId"       type="hidden"  value="981349" >
+  <input name="description"     type="hidden"  value="Test venta con PAYU"  >
+  <input name="referenceCode"   type="hidden"  value="TestPayU" >
+  <input name="amount"          type="hidden"  value="<?php echo htmlspecialchars($valor); ?>"   >
+  <input name="tax"             type="hidden"  value="0"  >
+  <input name="taxReturnBase"   type="hidden"  value="0" >
+  <input name="currency"        type="hidden"  value="COP" >
+  <input name="signature"       type="hidden"  value="7ee7cf808ce6a39b17481c54f2c57acc"  >
+  <input name="test"            type="hidden"  value="0" >
+  <input name="buyerEmail"      type="hidden"  value="<?php echo htmlspecialchars($correo); ?>" >
+  <input name="responseUrl"     type="hidden"  value="http://www.test.com/response" >
+  <input name="confirmationUrl" type="hidden"  value="http://www.test.com/confirmation" >
+  <input name="Submit"class="btn_sign" type="submit"  value="Comprar" >
+</form>
+       
       </div>
 
     </div>

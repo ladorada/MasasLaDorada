@@ -126,5 +126,15 @@ class RegistroUsuarioM extends conexionBD{
         $pdo->close;
     }
 
+static public function mostrarDeudaM($datosC, $tablaBD)
+    {
+        $pdo = conexionBD::cBD()->prepare("SELECT deuda FROM $tablaBD WHERE email_i = :email_i ");
+        $pdo->bindParam(":email_i", $datosC["email_i"], PDO::PARAM_STR);
+
+        $pdo->execute();
+        return $pdo->fetchAll();
+        $pdo->close;
+    }
+    
 
 }

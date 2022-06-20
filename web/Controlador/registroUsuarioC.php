@@ -128,4 +128,18 @@ class registroUsuarioC
             </tr>';
         }
     }
+
+    public function mostrarDeudaC()
+    {
+
+        $email = $_SESSION['email_i'];
+        $datosC = array("email_i" => $email);
+        $tablaBD = "usuarios";
+
+        $respuesta = RegistroUsuarioM::mostrarDeudaM($datosC, $tablaBD);
+
+        return $respuesta[0];
+        
+    }
+
 }

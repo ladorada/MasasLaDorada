@@ -13,7 +13,9 @@ class conexionBD{
         $query_builder = TRUE;
 
         try{
-            //$bd = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+            // pruebas 
+            //$bd = new PDO("mysql:host=localhost;dbname=Formularios","root","L27!vg2_A9nGc2vj");
+            // produccion
             $bd = new PDO("mysql:host=us-cdbr-east-05.cleardb.net;dbname=heroku_9ca67ac28214a8f","b30d55d7ca9702","31aeeb88");
             return $bd;
         }catch(PDOException$e){
