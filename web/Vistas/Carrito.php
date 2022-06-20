@@ -86,25 +86,40 @@ $valor =$valor->mostrarDeudaC();
 $valor = $valor[0];
 $valor = strval($valor);
 $correo = $_SESSION['email_i'];
-$correo = strval($correo)
+$correo = strval($correo);
+
+// Datos para produccion
+//$apikey = "6wtkVpzQ465nyIXmRY1rCJQF47";
+//$mearchantid = "973442";
+//$reference="TestPayU";
+
+// Datos para prueba
+$apikey = "4Vj8eK4rloUd272L48hsrarnUA";
+$mearchantid = "508029";
+$reference="TestPayU".time();
+$reference = strval($reference);
+
+$signature = $apikey."~".$mearchantid."~".$reference."~".$valor."~"."COP";
+
+$signature = md5($signature);
+$signature = strval($signature);
 
                      ?>
               </tbody>
        </table></div>
 
-
        <div class="cont_principal">
         
        <form method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/">
-  <input name="merchantId"      type="hidden"  value="973442"   >
-  <input name="accountId"       type="hidden"  value="981349" >
+  <input name="merchantId"      type="hidden"  value="508029"   >
+  <input name="accountId"       type="hidden"  value="512321" >
   <input name="description"     type="hidden"  value="Test venta con PAYU"  >
-  <input name="referenceCode"   type="hidden"  value="TestPayU" >
+  <input name="referenceCode"   type="hidden"  value="<?php echo htmlspecialchars($reference); ?>" >
   <input name="amount"          type="hidden"  value="<?php echo htmlspecialchars($valor); ?>"   >
   <input name="tax"             type="hidden"  value="0"  >
   <input name="taxReturnBase"   type="hidden"  value="0" >
   <input name="currency"        type="hidden"  value="COP" >
-  <input name="signature"       type="hidden"  value="7ee7cf808ce6a39b17481c54f2c57acc"  >
+  <input name="signature"         value="<?php echo htmlspecialchars($signature); ?>"  >
   <input name="test"            type="hidden"  value="0" >
   <input name="buyerEmail"      type="hidden"  value="<?php echo htmlspecialchars($correo); ?>" >
   <input name="responseUrl"     type="hidden"  value="http://www.test.com/response" >
@@ -113,6 +128,9 @@ $correo = strval($correo)
 </form>
        
       </div>
+
+      <!--- Enlace único funcional
+      <a href="https://biz.payulatam.com/B0eda825FB3F0AB"><img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_grande.png"></a> -->
 
     </div>
 
