@@ -83,7 +83,7 @@ require_once "../Modelo/productosM.php";
        </table></div>
        <br>
        <br>
-       <p align="center">Estimado cliente para poder comprar necesita registrarse <a href="IniciarSesion.php">Aquí</a></p>
+       <p align="center">Estimado cliente para poder comprar necesita registrarse <a href="Registro.php">Aquí</a></p>
 
 
 
