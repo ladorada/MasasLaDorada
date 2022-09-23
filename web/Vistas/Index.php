@@ -66,7 +66,9 @@ require_once "../Modelo/RegistroUsuarioM.php";
 
        </div>
 
-        
+        <br>
+       <br>
+       <p align="center">Estimado cliente para poder comprar necesita registrarse <a href="Registro.php">Aquí</a></p>
        
     
     
