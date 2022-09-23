@@ -59,6 +59,7 @@ require_once "../Modelo/RegistroUsuarioM.php";
           <div class="cont_btn">
           <input type="submit" class="btn_sign" value="Ingresar">
           <a href="recuperarContrasena.php" class="link_forgot_pass d_block" >¿Olvidaste la contraseña?</a>
+            <a href="Registro.php" class="link_forgot_pass d_block" >¿Aún no estás registrado? ¡Regístrate!</a>
             <!--- <button class="btn_sign">Ingresar</button> -->
 
           </div>
