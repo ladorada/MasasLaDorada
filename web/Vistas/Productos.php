@@ -59,7 +59,7 @@ require_once "../Modelo/productosM.php";
        </br>
 
 
-       <h3 align="center">Bienvenidos a la Dorada las tapas de empanadas y pascualinas más ricas del país. Nuestros productos son:</h3>
+       <h3 align="center">Bienvenidos a la Dorada las tapas de empanadas y pascualinas más ricas del país.</h3>
        </br></br>
        <h3 align="center">Nuestros productos son:</h3>
 
